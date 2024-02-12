@@ -18,3 +18,24 @@ function calculateTriangleArea(){
     const triangleAreaSpan = document.getElementById('triangle-area');
     triangleAreaSpan.innerText = area; 
 }
+
+function calculateRectingleArea(){
+    //calculate rectinagle width
+    const rectinagleWidthInput = document.getElementById('rectinagle-width');
+    const rectinagleWidthText = rectinagleWidthInput.value;
+    const rectinagleWidth = rectinagleWidthText;
+
+
+    //calculate rectinagle length 
+    const rectinagleLengthInput = document.getElementById('rectinagle-length');
+    const rectinagleLengthText = rectinagleLengthInput.value;
+    const rectinagleLength = rectinagleLengthText;
+
+    //calculate rectinagle
+    const rectinagleArea = rectinagleWidth * rectinagleLength;
+
+
+    const rectinagleAreaSpan = document.getElementById('rectinagle-area');
+    rectinagleAreaSpan.innerText = rectinagleArea;
+
+}
