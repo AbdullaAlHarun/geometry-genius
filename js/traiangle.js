@@ -23,13 +23,13 @@ function calculateRectingleArea(){
     //calculate rectinagle width
     const rectinagleWidthInput = document.getElementById('rectinagle-width');
     const rectinagleWidthText = rectinagleWidthInput.value;
-    const rectinagleWidth = rectinagleWidthText;
+    const rectinagleWidth = parseFloat(rectinagleWidthText);
 
 
     //calculate rectinagle length 
     const rectinagleLengthInput = document.getElementById('rectinagle-length');
     const rectinagleLengthText = rectinagleLengthInput.value;
-    const rectinagleLength = rectinagleLengthText;
+    const rectinagleLength = parseFloat(rectinagleLengthText);
 
     //calculate rectinagle
     const rectinagleArea = rectinagleWidth * rectinagleLength;
@@ -37,5 +37,26 @@ function calculateRectingleArea(){
 
     const rectinagleAreaSpan = document.getElementById('rectinagle-area');
     rectinagleAreaSpan.innerText = rectinagleArea;
+
+}
+
+function calculateParallelogramArea(){
+    //calculate parallelogram base
+    const parallelogramBaseInput = document.getElementById('parallelogram-base');
+    const parallelogramBaseText = parallelogramBaseInput.value;
+    const parallelogramBase = parseFloat(parallelogramBaseText);
+
+
+    //calculate rectinagle height 
+    const parallelogramLengthInput = document.getElementById('parallelogram-length');
+    const parallelogramLengthText = parallelogramLengthInput.value;
+    const parallelogramLength = parseFloat(parallelogramLengthText); 
+
+    //calculate rectinagle
+    const parallelogramArea = parallelogramBase * parallelogramLength;
+
+
+    const parallelogramAreaSpan = document.getElementById('parallelogram-area');
+    parallelogramAreaSpan.innerText = parallelogramArea;
 
 }
