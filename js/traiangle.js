@@ -60,3 +60,25 @@ function calculateParallelogramArea(){
     parallelogramAreaSpan.innerText = parallelogramArea;
 
 }
+//pentagon
+
+function calculatePentagonArea (){
+    const perimeter = getInputValueById('pentagon-parimeter');
+    const apothem = getInputValueById('pentagon-apothem');
+
+    const area = 0.5 * perimeter * apothem;
+
+    setInnerTexByID('pentagon-area', area);
+}
+
+function getInputValueById(inputFeildId){
+    const inputFeild = document.getElementById(inputFeildId);
+    const inputValuText = inputFeild.value; 
+    const value = parseFloat(inputValuText);
+    return value;
+}
+
+function setInnerTexByID(elementId, area){
+    const element = document.getElementById(elementId);
+    element.innerText = area;
+}
